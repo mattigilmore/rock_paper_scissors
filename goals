@@ -1,5 +1,7 @@
 goals of rock paper scissors game</br>	 
-1.Finish debug basic text game.</br>	 
+1.Finish debug basic text game.</br>
+ 1.a only 1(rock) is working</br>
+ 1.2 go through and  change y to "y"	 
 2.Add multi player</br>	 
 3.Add grafics.</br>	 
 4.Figure out how to make it and android game and web game(probably flask)</br>	 

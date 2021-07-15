@@ -6,7 +6,9 @@ while  run_loop==True:
     print("pc pick:"+str(computer))
     pick_loop=True
     replay_loop=True
+    y = "y"  # forgot to make all the y's strings i'll fix it later
     replay=y
+
     while pick_loop==True:
         print("pick 1)rock 2)paper 3)scissors \n")
         player=input()
@@ -15,7 +17,7 @@ while  run_loop==True:
             player=int(player)
             if player==computer:
                 print("It  is a tie would you like to play again y/n \n")
-                repley=input()
+                replay=input()
                 while replay_loop==True:
                         if replay==y:
                            pick_loop=False
@@ -24,68 +26,68 @@ while  run_loop==True:
                             run_loop=pick_loop=False
                             break
             elif player==1:
-                    if compture==2:
+                    if computer==2:
                         print("You LOSE;/( would you like to try again y/n \n")
                         while replay_loop==True:
+                           replay=input()
+                           if replay==y:
+                             pick_loop=False
+                             break
+                           else:
+                             run_loop=pick_loop=False
+                             break
+                    else:
+                         print("You WIN!!!! would you like to try again y/n \n")
+                         while replay_loop==True:
+                            repley=input()
+                            if replay==y:
+                              pick_loop=False
+                              break
+                            else:
+                              run_loop=pick_loop=False
+                              break
+        elif player==2:
+             if computer==3:
+                 print("You LOSE;/( would you like to try again y/n \n")
+                 while replay_loop==True:
                         repley=input()
+                        if replay==y:
+                            pick_loop=False
+                            break
+                        else:
+                            run_loop=pick_loop=False
+                            break
+                 else:
+                     print("You WIN!!!! would you like to try again y/n \n")
+                     while replay_loop==True:
+                         repley=input()
                          if replay==y:
                             pick_loop=False
                             break
                          else:
                             run_loop=pick_loop=False
                             break
+        elif player==3:
+            if computer==1:
+                print("You LOSE;/( would you like to try again y/n \n")
+                while replay_loop==True:
+                    repley=input()
+                    if replay==y:
+                        pick_loop=False
+                        break
                     else:
-                         print("You WIN!!!! would you like to try again y/n \n")
-                        while replay_loop==True:
-                        repley=input()
-                         if replay==y:
-                            pick_loop=False
-                            break
-                        else:
-                            run_loop=pick_loop=False
-                            break
-         elif player==2:
-                    if compture==3:
-                        print("You LOSE;/( would you like to try again y/n \n")
-                        while replay_loop==True:
-                        repley=input()
-                         if replay==y:
-                            pick_loop=False
-                            break
-                        else:
-                            run_loop=pick_loop=False
-                            break
+                        run_loop=pick_loop=False
+                        break
+            else:
+                print("You WIN!!!! would you like to try again y/n \n")
+                while replay_loop==True:
+                    repley=input()
+                    if replay!=y:
+                        pick_loop=False
+                        break
                     else:
-                         print("You WIN!!!! would you like to try again y/n \n")
-                        while replay_loop==True:
-                        repley=input()
-                         if replay==y:
-                            pick_loop=False
-                            break
-                        else:
-                            run_loop=pick_loop=False
-                            break
-         elif player==3:
-                    if compture==1:
-                        print("You LOSE;/( would you like to try again y/n \n")
-                        while replay_loop==True:
-                        repley=input()
-                         if replay==y:
-                            pick_loop=False
-                            break
-                        else:
-                            run_loop=pick_loop=False
-                            break
-                    else:
-                         print("You WIN!!!! would you like to try again y/n \n")
-                         while replay_loop==True:
-                         repley=input()
-                         if replay!=y:
-                            pick_loop=False
-                            break
-                        else:
-                            run_loop=pick_loop=False
-                            break
+                        run_loop=pick_loop=False
+                        break
 
 
 
