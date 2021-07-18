@@ -80,12 +80,14 @@ while  run_loop==True:
                             while replay_loop==True:
                                replay=input()
                                if replay=="y":
-
-                                 break
+                                   print("loop true")
+                                   break
                                else:
-                                 end_game=True
-                                 run_loop=pick_loop=False
-                                 break
+
+                                    print("loop false")
+                                    end_game=True
+                                    run_loop=pick_loop=False
+                                    break
                         else:
                             win2+=1
                             if pc_or_multi=="2":
