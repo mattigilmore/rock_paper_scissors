@@ -9,6 +9,7 @@ tie1=0
 win2=0
 lose2=0
 tie2=0
+end_game=False
 pc_or_multi="0"
 pc_multi=True
 run_loop=True
@@ -41,6 +42,7 @@ while  run_loop==True:
                         print("player 2 turn \n")
                         break
                     else:
+                        pick_loop=False
                         print(invalid_input)
         while pick_loop==True:
             print("pick 1)rock 2)paper 3)scissors \n")
@@ -61,9 +63,10 @@ while  run_loop==True:
 
                     while replay_loop==True:
                             if replay=="y":
-                               pick_loop=False
+
                                break
                             else:
+                                end_game=True
                                 run_loop=pick_loop=False
                                 break
                 elif player==1:
@@ -77,9 +80,10 @@ while  run_loop==True:
                             while replay_loop==True:
                                replay=input()
                                if replay=="y":
-                                 pick_loop=False
+
                                  break
                                else:
+                                 end_game=True
                                  run_loop=pick_loop=False
                                  break
                         else:
@@ -93,9 +97,10 @@ while  run_loop==True:
                             while replay_loop==True:
                                 replay=input()
                                 if replay=="y":
-                                  pick_loop=False
+
                                   break
                                 else:
+                                  end_game=True
                                   run_loop=pick_loop=False
                                   break
                 elif player==2:
@@ -110,9 +115,10 @@ while  run_loop==True:
                             replay=input()
 
                             if replay=="y":
-                                pick_loop=False
+
                                 break
                             else:
+                                end_game=True
                                 run_loop=pick_loop=False
                                 break
                      else:
@@ -122,9 +128,10 @@ while  run_loop==True:
                          while replay_loop==True:
                              replay=input()
                              if replay=="y":
-                                pick_loop=False
+
                                 break
                              else:
+                                end_game=True
                                 run_loop=pick_loop=False
                                 break
 
@@ -139,18 +146,23 @@ while  run_loop==True:
                     while replay_loop==True:
                         replay=input()
                         if replay!="y":
-                            pick_loop=False
+
                             break
                         else:
+                            end_game=True
                             run_loop=pick_loop=False
                             break
 
-                    print("player 1\n")
-                    print("wins:" + str(win1) + "  lose:" + str(lose1) + " ties:" + str(tie1) + "\n")
-                    print("player 2\n")
-                    print("wins:" + str(win2) + "  lose:" + str(lose2) + " ties:" + str(tie2) + "\n")
-
-
+                print("player 1\n")
+                print("wins:" + str(win1) + "  lose:" + str(lose1) + " ties:" + str(tie1) + "\n")
+                print("player 2\n")
+                print("wins:" + str(win2) + "  lose:" + str(lose2) + " ties:" + str(tie2) + "\n")
+                if end_game==True:
+                    break
+                else:
+                    pass
+            elif end_game==True:
+                break
             else:
                 print(invalid_input)
 
