@@ -1,8 +1,5 @@
-from invalid_input import invalid_input
-from pick_single_or_multi_player import pick_single_or_multi_player
-
-
-
+from invalid_input import *
+from pick_single_or_multi_player import *
 win1=0
 lose1=0
 tie1=0

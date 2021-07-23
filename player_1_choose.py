@@ -1,5 +1,6 @@
-from pick_single_or_multi_player import pick_single_or_multi_player
-from invalid_input import invalid_input
+from pick_single_or_multi_player import*
+from invalid_input import *
+
 def player_1_choose():
     multi_choose = True
     while multi_choose == True:
@@ -11,3 +12,4 @@ def player_1_choose():
             break
         else:
             print(invalid_input)
+

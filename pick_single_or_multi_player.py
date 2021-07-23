@@ -1,8 +1,8 @@
 import random
-from player_1_choose import  player_1_choose
-
+from player_1_choose import * 
+pc_or_multi="0"
 def pick_single_or_multi_player():
-    if pc_or_muli !="0" or "1" or "2":
+    if pc_or_multi !="0" or "1" or "2":
         pc_or_multi="0"
     else:
         pass
@@ -18,3 +18,4 @@ def pick_single_or_multi_player():
             break
         elif pc_or_multi == "2":
             player_1_choose()
+pick_single_or_multi_player()
