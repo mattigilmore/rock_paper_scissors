@@ -10,8 +10,9 @@ done</br>
 2.a.2 fix error with loop error  gets stick when i choose computer</br>
 it is still stuck i tried  adding an end_game if statement. It just  gets stuck i am taking this to reddit or discord. maybe both.after i commit this to github.~ matti</br>
 done</br>
-2.a.1 learn how to make functions and turn everthing into a function
-2.a.1.a figure out why importing is falling
+2.a.1 learn how to make functions and turn everthing into a function(no none but no longer need)
+2.a.1.a figure out why importing is falling(dont done  but no longer needed)
+2.b everything is done but readding the code that checks who wins. and win lose and tie total.
 
 3.Add grafics.</br>	 
 4.Figure out how to make it and android game and web game(probably flask)</br>	 
